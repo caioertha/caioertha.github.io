@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo para o cardápio */
+#cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+#cardapio li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#cardapio li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#cardapio img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#cardapio figcaption {
+    font-weight: bold;
+    color: #555;
+}
+
+#cardapio strong {
+    display: block;
+    margin-top: 5px;
+    color: #4CAF50;
+}
+
+/* Estilo para a lista de pedidos */
+#pedidos {
+    list-style: none;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#pedidos li {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#pedidos img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+#pedidos figcaption {
+    font-weight: bold;
+    color: #333;
+}
+
+#pedidos strong {
+    color: #4CAF50;
+    font-size: 1.1em;
+    margin-left: auto;
+}
+
+/* Estilo para o valor total */
+#valorTotal {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-top: 20px;
+}

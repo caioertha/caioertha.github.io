@@ -1,0 +1,21 @@
+#jogo{
+    position: relative;
+}
+#bolaDeFogo{
+    position: absolute;
+    top: 50px;
+    width: 93px;
+    height: 54px;
+    left: 180px;
+    animation-name: moverBolaDeFogo;
+    animation-duration: 3s;
+}
+@keyframes moverBolaDeFogo {
+    from{
+        left: 180px;
+    }
+    to{
+        left: 800px;
+        display: none;
+    }
+}
